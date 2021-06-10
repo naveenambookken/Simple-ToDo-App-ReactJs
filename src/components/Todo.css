@@ -1,0 +1,133 @@
+*{
+    box-sizing: border-box;
+}
+
+.todoapp{
+   
+    
+    border: 2px solid grey;
+    border-radius: 10px;
+    max-width: 400px;
+    min-height: 550px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(62, 64, 66);
+    display: flex;
+    flex-direction: column;
+    
+    
+    }
+
+.titlehead{
+    text-align: center;
+    color: whitesmoke;
+    padding-top: 10px;
+    font-family: cursive;
+    font-size: 32px;
+    
+}
+
+.addingTask{
+    display: flex;
+    min-width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    
+}
+.input-task{
+    width: 75%;
+    border: none;
+    font-size: 16px;
+    font-size: max(16px, 1em);
+    font-family: inherit;
+    padding: 0.25em 0.5em;
+    margin-right: 15px;
+    border-radius: 6px;
+    outline: 0px;
+    
+
+}
+.input-task::placeholder{
+    color: rgb(116, 116, 116);
+}
+
+  
+.button-add{
+    margin: 0px;
+    width: 90px;
+    background-color: rgb(211, 240, 108);
+    color: rgb(0, 0, 0);
+    transition: .5s ease;
+}
+.button-add:hover{
+    background-color: rgb(91, 47, 211);
+    color: rgb(255, 255, 255);
+    
+}
+.displayTask{
+       
+    flex: 1;
+    overflow: auto;
+}
+/*style scroll bar*/
+::-webkit-scrollbar{
+    width: 8px;
+}
+::-webkit-scrollbar-track{
+    
+  
+	border-radius: 10px;
+    border: 10px solid rgb(62, 64, 66);
+}
+::-webkit-scrollbar-thumb{
+    border-radius: 10px;
+    background:linear-gradient(45deg,rgba(247, 199, 199, 0.623),rgb(138, 138, 138));
+
+}
+/*  */
+.carddisplay{
+    background-color: rgb(62, 39, 116);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;  
+    border-radius: 10px;
+    margin: 10px;
+    padding: 5px;
+    
+    
+    
+}
+.one{
+    margin-left: 10px;
+    
+}
+.task-content{
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-family: inherit;
+    line-height: normal;   
+    
+}
+.line-through{
+    text-decoration: line-through; 
+}
+.two{
+    margin-left: 10px;
+    margin-right: 10px;  
+}
+.trashicon{
+    transition: .5s ease;
+}
+
+.carddisplay .trashicon:hover{
+    color: rgb(218, 138, 35);
+    cursor: pointer;
+}
+.carddisplay:hover{
+    background-color: rgb(43, 19, 95);
+}
+

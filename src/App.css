@@ -1,8 +1,11 @@
 body{
   background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   animation: bgcoloranimation 8s ease-out infinite  ;
- 
 }
+
 @keyframes bgcoloranimation{
   0%{
     background-color: rgb(247, 93, 93);
